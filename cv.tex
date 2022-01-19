@@ -66,21 +66,17 @@
 
 \begin{document}
 \name{VU HOANG NGUYEN}
-\tagline{Embedded System Engineer}
+\tagline{Firmware Engineer}
 \photo{3.5cm}{myportrait}
 \personalinfo{
 	%
 	% Not all of these are required!
 	% You can add your own with \printinfo{symbol}{detail}
-	\email{nhoangvubk@gmail.com} \hspace{0.5cm} \phone{(+84) 169.3819.940}
+	\email{nhoangvubk@gmail.com} \hspace{0.5cm} \phone{(+84) 088 6789417} \hspace{0.5cm} \github{vlognouh}
 
 	\medskip
 
-	\github{vlognouh} \hspace{1cm} \facebook{nhoangvubk} \hspace{1cm} \twitter{nhoangvubk}
-
-	\medskip
-
-	\location{Hiep Phu Ward, District 9, Ho Chi Minh, Vietnam}
+	\location{Hiep Phu Ward, Thu Duc, Ho Chi Minh, Vietnam}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -88,36 +84,38 @@
 %% Make the header extend all the way to the right, if you want.
 \makecvheader
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-%% You can always just use \marginpar{...} if you do
-%% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
-%-------------------------------------------------------------------------------
-%				EDUCATION
-%-------------------------------------------------------------------------------
-\cvsection{Education}
-\cvevent{BSc. in Electronics \& Telecommunications Engineering}{\href{http://www.hcmut.edu.vn/}{Bach Khoa University}}{2010 - 2015}{Vietnam}
-{
-	Honor Program, GPA: 7.87/10
-}
-
 %-------------------------------------------------------------------------------
 %				EXPERIENCE
 %-------------------------------------------------------------------------------
-\cvsection{Experience}
-\cvevent{Software Engineer}{\href{https://www.apm.com}{AppliedMicro}}{Jul 2016 - Present}{Vietnam}
+\cvsection{Work Experience}
+
+\cvevent{Firmware Engineer}{\href{https://www.amperecomputing.com}{Ampere Computing}}{Oct 2017 - Present}{Vietnam}
 \begin{itemize}
-\item Work with Hardware and Diagnostic team to provide customers support, including system bring-up and trouble shooting % serdes, test PCIe Card, back-port mac-to-mac mode
-\item Fix bugs on U-Boot, Linux Kernel, back-port Spectre and Meltdown patches for older kernel version
-\item Study and deploy different Workloads on AppliedMicro ARM64 system such as: CEPH, MySQL, LEMP stack + HHVM, Docker. % Compile, install, config, benchmark
+\item Port Android 8.1 to eMAG based Osprey system.
+\item Work with Lenovo engineers to support the AptioV for Falcon system.
+\item Support EDK2 for Altra and Altra Max on Mt. Jade system: variable services, IPMI SSIF, Redfish client, backport AptioV features (PCIe, Screen Menu, ACPI tables) and bug fix.
+\item Upstream EDK2 for Altra, redesign PCIe software stack to conform to the EDK2 framework.
+\item Work close with OpenBMC and SQA team to make sure the EDK2 release works well.
+\item Start EDK2 support for Siryn with NVPARAM library.
 \end{itemize}
 
 \divider
 
-\cvevent{Hardware/Software Engineer}{\href{https://www.2klic.com}{2KLIC - Open IOT Solution}}{Sept 2014 - Jun 2016}{Vietnam}
+\cvevent{Firmware Engineer}{\href{https://www.apm.com}{Applied Micro}}{Jul 2016 - Sept 2017}{Vietnam}
 \begin{itemize}
-\item Responsible for developing Smart Controller for Smart Home system, including hardware design (based on Freescale iMX6, Rockchip RK3188, RK3288), bootloader and device driver porting % bootloader: uboot, vendor's bootloader | kernel: device driver porting, device tree porting | 
-\item Write demo application, test script and User manual
+\item Write script to backup/restore the Ubuntu harddisk.
+\item Analyze Ubuntu bugs and benchmark network performance.
+\item Deploy CEPH cluster and Virtual machine on X-Gene 1 based Mustang system.
+\end{itemize}
+
+\divider
+
+\cvevent{Hardware/Firmware Engineer}{\href{https://www.2klic.com}{2KLIC - Open IOT Solution}}{Sept 2014 - Jun 2016}{Vietnam}
+\begin{itemize}
+\item Develop Smart Home Controller includes hardware and firmware support
+\item Hardware design using Freescale iMX233, iMX6, Rockchip RK3188
+\item Port U-Boot, Linux Kernel and implement driver for touch screen
+\item Write demo application, test script
 \item Help Junior member get acquainted with Embedded Linux and PCB Layout
 \end{itemize}
 
@@ -133,69 +131,34 @@
 %-------------------------------------------------------------------------------
 \cvsection{Technical skills}
 \begin{itemize}
-\item Familiar with 32-bit ARMv7-M/A and 64-bit ARMv8-A architecture
-\item Bare metal MCU programming, debugging
-\item Experienced in Embedded Linux development
-\item Schematic Design and High-speed 2-6 layers PCB Layout
-\item Be able to use VOM, Oscilloscope, Solder and Hot Air gun
+\item Familiar with 32-bit ARMv7-M/A and 64-bit ARMv8-A
+\item Familiar with UEFI development
+\item Bare metal MCU programming
+\item Schematic design and PCB layout
+\item Testing tools: Multimeter, Oscilloscope, Logic Analyzer
 \end{itemize}
 
-\divider
-
-\cvtag{U-Boot}
-\cvtag{Cadence Allegro}
-\cvtag{Bare metal}
-\cvtag{Embedded Linux}
-\cvtag{ARM Architecture}
-\cvtag{GCC}
-\cvtag{Device Driver}
-\cvtag{JTAG}
-\cvtag{Raspberry Pi}
-\cvtag{Beagle Bone}
-\cvtag{Freescale}
-\cvtag{Rockchip}
-\cvtag{STM32}
-\cvtag{ESP8266}
-\cvtag{FreeRTOS}
-\cvtag{UEFI/ACPI}
-\cvtag{Device Tree}
-
 %-------------------------------------------------------------------------------
-%				PROGRAMMING SKILLS
+%				SIDE PROJECT
 %-------------------------------------------------------------------------------
-\cvsection{Programmings}
-\cvskill{C}{4}
-\cvskill{Assembly}{3}
-\cvskill{Shell Script}{3}
-\cvskill{\LaTeX}{1}
-
-%-------------------------------------------------------------------------------
-%				ACHIEVEMENTS
-%-------------------------------------------------------------------------------
-\cvsection{Personal Projects}
+\cvsection{Side Projects}
 \begin{itemize}
-\item Building Capacitive Touch button with PIC16F887
-\item Building MP3 Music Player using STM32
-\item Bare metal support for Allwinner H3 (GPIO, I2C, SPI, Timer, GIC,...)
-\item Driver porting for Oled display, TFT LCD, LM35, MPU6080,...
+\item Support PXE boot for Windows PE via Grub and Wimboot
+\item Port coreboot for Mt. Snow system
 \end{itemize}
 
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
 %-------------------------------------------------------------------------------
-%				LANGUAGES
+%				EDUCATION
 %-------------------------------------------------------------------------------
-\cvsection{Languages}
-\cvskill{Vietnamese}{5}
-\cvskill{English}{3}
-
-%-------------------------------------------------------------------------------
-%				SOFT SKILLS
-%-------------------------------------------------------------------------------
-\cvsection{Soft skills}
-\cvtag{Coaching}
-\cvtag{Enthusiastic}
-\cvtag{Funny}
-\cvtag{Logical thinking}
-\cvtag{Presentation}
+\cvsection{Education}
+\cvevent{BSc. in Electronics \& Telecommunications Engineering}{\href{http://www.hcmut.edu.vn/}{Bach Khoa University}}{2010 - 2015}{Vietnam}
+{
+	Honor Program, GPA: 7.87/10
+}
 
 %-------------------------------------------------------------------------------
 %				INTERESTS
@@ -209,18 +172,10 @@
 %-------------------------------------------------------------------------------
 \cvsection{Referees}
 % \cvref{name}{email}{mailing address}
-\cvref{Mr. Thang Quyet Nguyen}{tqnguyen@apm.com}
+\cvref{Mr. Thang Quyet Nguyen}{thangqn@amperecomputing.com}
 {
-	Embedded Software Manager \\
-	AppliedMicro Inc \\
-}
-
-\divider
-
-\cvref{Mr. Bao Quoc Bui}{bqbao@hcmut.edu.vn}
-{
-	Head of the Electronics Lab \\
-	Bach Khoa University, Ho Chi Minh \\
+	Software Manager \\
+	Ampere Computing \\
 }
 
 \end{document}
